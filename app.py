@@ -28,7 +28,7 @@ def predict():
     df = pd.DataFrame(features_value, columns=features_name)
     output = model.predict(df)
         
-    if output == 1:
+    if output == 0:
         res_val = "** breast cancer **"
     else:
         res_val = "no breast cancer"
